@@ -6,7 +6,7 @@
   border-radius: @cart-icon-border-radius;
   position: relative;
   background-color: @cart-icon-bg;
-  min-height: @navbar-height;
+  height: @navbar-height;
   a i {
     color: @cart-icon-color;
     background-color: transparent;
@@ -27,8 +27,6 @@
   }
 }
 .cart-alert{
-  color: #555555;
-  background-color: #ffffff;
   float: right;
   position: absolute;
   top: 0;
@@ -37,14 +35,28 @@
   background-color: @cart-icon-bg;
   display: none;
   z-index: 10;
+  box-shadow: 0 5px 5px -5px @navbar-inverse-bg;
   .cart-alert-text {
     padding: @navbar-padding-vertical;
-    height: @navbar-height;
+    height:  @navbar-height;
+    min-width: 225px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .cart-alert-checkout {
+    height:  @navbar-height;
+    background-color: transparent;
+    padding-left: @navbar-padding-vertical;
+    padding-right: @navbar-padding-vertical;
     min-width: 225px;
     white-space: nowrap;
   }
 }
-.navbar-cart .cart-icon > a:hover {
-  background-color: #fff;
+
+.navbar-cart:hover{
+  cursor: pointer;
+  background-color: @body-bg;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
