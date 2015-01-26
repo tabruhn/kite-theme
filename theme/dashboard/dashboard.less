@@ -13,13 +13,12 @@
   }
 }
 .dashboard-navbar-packages {
-  background-color: @navbar-default-bg;
   .nav-pills li a {border-radius: 0px;}
-  i.dashboard-drawer-close-btn {
-    color: @navbar-default-color;
-    position: absolute;
-    right: 10px;
-    margin-top: 10px;
+  text-transform: uppercase;
+  height: 41px;
+  border-bottom: 1px solid @gray-lighter;
+  .navbar-brand a:hover {
+    color: @navbar-default-link-color;
   }
 }
 
@@ -135,11 +134,7 @@ Dashboard Swiper Pagination Styles
   background: #fff;
 }
 
-.dashboard-drawer-controls {
-  float:right;
-}
-
-button.dashboard-drawer-close-button {
-  .close;
-  padding: 10px 25px;
+.dashboard-drawer-controls button {
+  padding-top: 10px;
+  border: none;
 }

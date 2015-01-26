@@ -1,7 +1,7 @@
 Package.describe({
   name: "reactioncommerce:core-theme",
   summary: "Reaction Commerce base theme",
-  version: "1.0.5",
+  version: "1.0.6",
   git: "https://github.com/reactioncommerce/core-theme.git"
 });
 
@@ -16,7 +16,6 @@ Package.onUse(function(api) {
     'default/mixins.less',
     'default/variables.less',
     'theme/accounts/accounts.less',
-    'theme/accounts/dropdown/dropdown.less',
     'theme/accounts/inline/inline.less',
     'theme/cart/cart.less',
     'theme/cart/cartDrawer/cartDrawer.less',
