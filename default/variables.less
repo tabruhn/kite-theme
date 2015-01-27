@@ -21,7 +21,8 @@
 @navbar-default-bg: #2fa4e7;
 @navbar-default-color: #fff;
 @navbar-default-link-color: #fff;
-@navbar-default-toggle-icon-bar-bg: lighten(@navbar-default-bg, 10%);
+@navbar-default-toggle-icon-bar-bg: darken(@navbar-default-bg, 10%);
+@navbar-default-toggle-hover-bg: darken(@navbar-default-bg, 10%);
 @navbar-margin-bottom: 0;
 @navbar-brand-height: 20px;
 @navbar-brand-font-size: 20px;
@@ -47,7 +48,7 @@
 
 
 //== Cart Drawer
-@cart-drawer-bg: #626262;
+@cart-drawer-bg: @gray-dark;
 @cart-drawer-height: 275px;
 @cart-icon-bg: @body-bg;
 @cart-icon-badge:  #25B315;
