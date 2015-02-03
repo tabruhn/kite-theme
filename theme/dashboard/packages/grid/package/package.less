@@ -14,7 +14,7 @@
   }
 
   .disablePkg {
-    color: #CDD4D8;
+    color: @gray-light;
   }
 
   .pkg-controls {
@@ -23,14 +23,20 @@
     bottom: 16px;
   }
   .status {
-    color: #CDD4D8;
+    color: @gray-light;
   }
 }
 
 .pkg-app-class {
-  .ribbon(50px,@brand-primary,#fff);
+  .ribbon(50px,@brand-primary, #fff);
 }
 
 .pkg-feature-class {
-  .ribbon(50px,@brand-success,#fff);
+  .ribbon(50px,@brand-success, #fff);
+}
+
+.pkg-app-card, .pkg-app-card:hover {
+    color: @gray-dark;
+    text-decoration: none;
+    cursor: pointer;
 }
