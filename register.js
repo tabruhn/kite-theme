@@ -9,7 +9,7 @@ ReactionCore.registerPackage({
   defaultSettings: {
     mode: true,
   },
-  priority: '2',
+  cycle: 3,
   hasWidget: false,
   autoEnable: true
 });
