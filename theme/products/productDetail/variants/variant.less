@@ -30,7 +30,7 @@
 
 .variant-table {
   .edit, .buy {
-    text-align: right;
+    .text-align(right);
   }
 }
 
@@ -42,7 +42,7 @@
   display: inline-block;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-left: 5px;
+  .margin-left(5px);
   line-height: 28px;
   font-weight: 400;
   color: @btn-default-color;
@@ -51,13 +51,13 @@
 
 .variant-price {
   display: inline-block;
-  margin-left: 10px;
+  .margin-left(10px);
   font-size: medium;
   font-weight: 500;
   line-height: 30px;
   color: @btn-default-color;
   position: absolute;
-  right: 10px;
+  .right(10px);
 }
 
 .variant-edit {
@@ -65,7 +65,7 @@
   color: @link-color;
   position: absolute;
   border-radius: @input-border-radius;
-  right: -25px;
+  .right(-25px);
   padding: 0 5px 0 5px;
 }
 .variant-product-options {

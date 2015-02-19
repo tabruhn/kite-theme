@@ -7,7 +7,7 @@
   background-color: @cart-drawer-bg;
   color: @text-color;
   padding: 10px;
-  text-align: left;
+  .text-align(left);
   -moz-box-shadow:    inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
@@ -43,6 +43,7 @@ Basic Swiper Styles
 .cart-drawer-swiper-wrapper {
   position:relative;
   width:100%;
+
   -webkit-transition-property:-webkit-transform, left, top;
   -webkit-transition-duration:0s;
   -webkit-transform:translate3d(0px,0,0);
@@ -72,6 +73,14 @@ Basic Swiper Styles
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+
+  .rtl({
+    -webkit-transition-property:-webkit-transform, right, top;
+    -moz-transition-property:-moz-transform, right, top;
+    -o-transition-property:-o-transform, right, top;
+    -ms-transition-property:-ms-transform, right, top;
+    transition-property:transform, right, top;
+  });
 }
 .swiper-free-mode > .swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
@@ -84,7 +93,7 @@ Basic Swiper Styles
 .cart-drawer-swiper-slide {
   width: 250px;
   height: 250px;
-  float: left;
+  .float(left);
 }
 
 /* IE10 Windows Phone 8 Fixes */
@@ -111,7 +120,7 @@ Pagination Styles
 .cart-drawer-pagination {
   position: relative;
   z-index: 20;
-  left: 10px;
+  .left(10px);
   bottom: 10px;
 }
 .swiper-pagination-switch {
@@ -120,7 +129,7 @@ Pagination Styles
   height: 8px;
   border-radius: 8px;
   background: #222;
-  margin-right: 5px;
+  .margin-right(5px);
   opacity: 0.8;
   border: 1px solid #fff;
   cursor: pointer;

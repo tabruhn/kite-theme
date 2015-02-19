@@ -62,7 +62,7 @@
 #login-buttons {
 
   display: inline-block;
-  margin-right: (@navbar-padding-horizontal * 2);
+  .margin-right((@navbar-padding-horizontal * 2));
   padding-top: @navbar-padding-vertical;
   // This seems to keep the height of the line from
   // being sensitive to the presence of the unicode down arrow,
@@ -183,7 +183,7 @@
   }
 
   .text-besides-image {
-    margin-left: 18px;
+    .margin-left(18px);
   }
 
   .no-services { color: red; }
@@ -192,7 +192,7 @@
     position: relative;
   }
   .login-close-text {
-    float: left;
+    .float(left);
     position: relative;
     padding-bottom: 8px;
   }
@@ -364,7 +364,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    li { margin-left: 30px; }
+    li {
+      .margin-left(30px);
+    }
   }
   .configuration_labels { width: 30%; }
   .configuration_inputs { width: 70%; }
@@ -374,11 +376,11 @@
 }
 
 #configure-login-service-dialog-save-configuration {
-  float: right;
+  .float(right);
 }
 
 .configure-login-service-dismiss-button {
-  float: left;
+  .float(left);
 }
 
 #just-verified-dismiss-button, #messages-dialog-dismiss-button {
@@ -422,6 +424,6 @@
 .sign-in-text-facebook:before  {
   content: "\f09a";
   font-family: FontAwesome;
-  padding-right: 10px;
+  .padding-right(10px);
   font-size: 17px;
 }
