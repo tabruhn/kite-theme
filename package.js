@@ -15,6 +15,7 @@ Package.onUse(function(api) {
   api.addFiles([
     'default/mixins.less',
     'default/variables.less',
+    'default/bootstrap.rtl.less',
     'theme/accounts/accounts.less',
     'theme/accounts/inline/inline.less',
     'theme/cart/cart.less',
