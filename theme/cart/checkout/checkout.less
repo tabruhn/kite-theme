@@ -1,16 +1,16 @@
 .cart-checkout-steps {
-  padding-left: 5px;
+  .padding-left(5px);
   margin-top: 20px;
 
   .panel-title {
-    margin-left: 25px;
+    .margin-left(25px);
   }
 }
 
 @media screen and (min-width: @screen-sm-min) {
   .cart-checkout-steps {
     .col-md-8 {
-      padding-right: 15px;
+      .padding-right(15px);
     }
   }
 }
@@ -29,17 +29,21 @@
   border: 2px solid #fff;
   border-radius: 50%;
   font-size: 16px;
-  left: 21px;
+  .left(21px);
   top: -3px;
   width: 45px;
   color: #fff;
   line-height: 16px;
   height: 45px;
-  padding: 13px 11px 13px 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  .padding-left(12px);
+  .padding-right(11px);
   position: absolute;
   text-align: center;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  margin: 0 0 2px -30px;
+  margin: 0 0 2px 0;
+  .margin-left(-30px);
   font-weight: bold;
 }
 
@@ -68,6 +72,6 @@
      background-color: #ddd;
       position: absolute;
       top:inherit;
-      margin-left: -60px;
+      .margin-left(-60px);
   }
 }

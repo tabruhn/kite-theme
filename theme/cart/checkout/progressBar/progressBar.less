@@ -23,12 +23,20 @@ background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, tran
 .inner-shadow {
 -webkit-box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2); box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
 }
-@-webkit-keyframes myanimation {
+@-webkit-keyframes checkout-progress-animation-ltr {
   from {
     left: 0%;
   }
   to {
     left: 50%;
+  }
+}
+@-webkit-keyframes checkout-progress-animation-rtl {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 50%;
   }
 }
 
@@ -44,7 +52,10 @@ ul.checkout-bar {
     display: block;
     font-size: 16px;
     font-weight: 600;
-    padding: 14px 20px 14px 80px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    .padding-left(80px);
+    .padding-right(20px);
     position: relative;
     vertical-align: top;
     &:before {
@@ -55,9 +66,12 @@ ul.checkout-bar {
       color: #fff;
       font-size: 16px;
       font-weight: 700;
-      left: 20px;
+      .left(20px);
       line-height: 16px;
-      padding: 13px 11px 13px 12px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      .padding-left(12px);
+      .padding-right(11px);
       height: 35px;
       position: absolute;
       text-align: center;
@@ -133,13 +147,16 @@ ul.checkout-bar {
     margin-top: 20px;
   }
  .checkout-bar li.active:after {
-    -webkit-animation: myanimation 3s 0;
+   -webkit-animation: checkout-progress-animation-ltr 3s 0;
+   .rtl({
+     -webkit-animation: checkout-progress-animation-rtl 3s 0;
+   });
     .active-stripe;
     .inner-shadow;
     content:"";
     height: 15px;
     width: 100%;
-    left: 50%;
+    .left(50%);
     position: absolute;
     top: -50px;
     z-index: 0;
@@ -159,7 +176,7 @@ ul.checkout-bar {
     border-radius: 15px;
     content: " ";
     height: 15px;
-    left: 0;
+    .left(0);
     position: absolute;
     width: 10%;
   }
@@ -171,9 +188,12 @@ ul.checkout-bar {
       width: 19%;
       &:before {
         height: 45px;
-        left: 40%;
+        .left(40%);
         line-height: 16px;
-        padding: 13px 11px 13px 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        .padding-left(12px);
+        .padding-right(11px);
         position: absolute;
         top: -65px;
         width: 45px;
@@ -186,7 +206,7 @@ ul.checkout-bar {
           .inner-shadow;
           content: "";
           height: 15px;
-          left: 50%;
+          .left(50%);
           position: absolute;
           top: -50px;
           width: 100%;
