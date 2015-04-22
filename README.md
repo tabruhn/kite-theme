@@ -40,4 +40,8 @@ However, any files that are not already included must also be updated in the `re
 # Issues
 For development tasks/issues please use the [Reaction project issues](https://github.com/ongoworks/reaction/issues?state=open). We're keeping this as the central issue tracking for all [reactioncommerce:*](https://github.com/reactioncommerce/) packages. You can also view issues on our [waffle board](https://waffle.io/reactioncommerce/reaction).
 
+#Origin
+
+This package is based on and inspired by the [nemo64:bootstrap bootstrap3-less](https://github.com/Nemo64/meteor-bootstrap) package.
+
 
