@@ -44,4 +44,3 @@ For development tasks/issues please use the [Reaction project issues](https://gi
 
 This package is based on and inspired by the [nemo64:bootstrap bootstrap3-less](https://github.com/Nemo64/meteor-bootstrap) package.
 
-

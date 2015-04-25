@@ -1,8 +1,8 @@
 Package.describe({
-  name: "reactioncommerce:core-theme",
-  summary: "Reaction Commerce base theme",
-  version: "1.3.4",
-  git: "https://github.com/reactioncommerce/core-theme.git"
+  name: "tyson:kite-theme",
+  summary: "Reaction Commerce kite theme",
+  version: "0.0.1",
+  git: "https://github.com/tabruhn/kite-theme.git"
 });
 
 Package.onUse(function(api) {
